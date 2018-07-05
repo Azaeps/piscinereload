@@ -6,12 +6,12 @@
 /*   By: thperchi <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/07/03 16:00:20 by thperchi     #+#   ##    ##    #+#       */
-/*   Updated: 2018/07/03 16:03:47 by thperchi    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/07/05 16:58:21 by thperchi    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include <unistd.h>
+void	ft_putchar(char c);
 
 void	ft_is_negative(int n)
 {

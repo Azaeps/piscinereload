@@ -6,12 +6,12 @@
 /*   By: thperchi <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/07/03 15:55:45 by thperchi     #+#   ##    ##    #+#       */
-/*   Updated: 2018/07/03 15:59:54 by thperchi    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/07/05 16:57:58 by thperchi    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include <unistd.h>
+void	ft_putchar(char c);
 
 void	ft_print_numbers(void)
 {

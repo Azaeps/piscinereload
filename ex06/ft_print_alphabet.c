@@ -1,26 +1,26 @@
 /* ************************************************************************** */
 /*                                                          LE - /            */
 /*                                                              /             */
-/*   ft_putstr.c                                      .::    .:/ .      .::   */
+/*   ft_print_alphabet.c                              .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
 /*   By: thperchi <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2018/07/03 19:25:26 by thperchi     #+#   ##    ##    #+#       */
-/*   Updated: 2018/07/05 17:00:33 by thperchi    ###    #+. /#+    ###.fr     */
+/*   Created: 2018/07/05 16:54:44 by thperchi     #+#   ##    ##    #+#       */
+/*   Updated: 2018/07/05 16:57:12 by thperchi    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 void	ft_putchar(char c);
 
-void	ft_putstr(char *str)
+void	ft_print_alphabet(void)
 {
 	char x;
 
-	x = 0;
-	while (str[x] != '\0')
+	x = 'a';
+	while (x <= 'z')
 	{
-		ft_putchar(str[x]);
+		ft_putchar(x);
 		x++;
 	}
 }
