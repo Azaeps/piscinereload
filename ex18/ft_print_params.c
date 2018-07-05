@@ -1,21 +1,43 @@
 /* ************************************************************************** */
 /*                                                          LE - /            */
 /*                                                              /             */
-/*   ft_swap.c                                        .::    .:/ .      .::   */
+/*   ft_print_params.c                                .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
 /*   By: thperchi <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2018/07/03 16:06:15 by thperchi     #+#   ##    ##    #+#       */
-/*   Updated: 2018/07/04 18:54:23 by thperchi    ###    #+. /#+    ###.fr     */
+/*   Created: 2018/07/04 15:32:14 by thperchi     #+#   ##    ##    #+#       */
+/*   Updated: 2018/07/04 16:16:20 by thperchi    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-void	ft_swap(int *a, int *b)
-{
-	int c;
+#include <unistd.h>
 
-	c = *a;
-	*a = *b;
-	*b = c;
+void	ft_putchar(char c);
+
+void	ft_putstr(char *str)
+{
+	int x;
+
+	x = 0;
+	while (str[x])
+	{
+		ft_putchar(str[x]);
+		x++;
+	}
+}
+
+int		main(int ac, char **av)
+{
+	int x;
+
+	x = 1;
+	(void)ac;
+	while (av[x])
+	{
+		ft_putstr(av[x]);
+		ft_putchar('\n');
+		x++;
+	}
+	return (0);
 }
