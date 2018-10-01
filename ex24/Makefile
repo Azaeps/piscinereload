@@ -5,39 +5,32 @@
 #                                                  +:+:+   +:    +:  +:+:+     #
 #    By: thperchi <marvin@le-101.fr>                +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
-#    Created: 2018/07/07 04:29:50 by thperchi     #+#   ##    ##    #+#        #
-#    Updated: 2018/07/07 04:30:31 by thperchi    ###    #+. /#+    ###.fr      #
+#    Created: 2018/10/01 16:14:20 by thperchi     #+#   ##    ##    #+#        #
+#    Updated: 2018/10/01 16:14:21 by thperchi    ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
 
 NAME = libft.a
 
-CC = gcc
+SRC = srcs/ft_putchar.c srcs/ft_putstr.c srcs/ft_strcmp.c srcs/ft_strlen.c\
+srcs/ft_swap.c
 
-INCLUDES = ./includes
+SRCO = ft_putchar.o ft_putstr.o ft_strcmp.o ft_strlen.o ft_swap.o
 
-FLAGS = -Wall -Wextra -Werror
+INC = includes
 
-SRC = srcs/ft_putchar.c srcs/ft_putstr.c srcs/ft_strcmp.c \
-						srcs/ft_strlen.c srcs/ft_swap.c
-
-OBJ = ft_putchar.o ft_putstr.o ft_strcmp.o \
-						ft_strlen.o ft_swap.o
-
-all: $(NAME)
+all : $(NAME)
 
 $(NAME):
-		$(CC) $(FLAGS) -c $(SRC) -I $(INCLUDES)
-		ar rc $(NAME) $(OBJ)
-		ranlib $(NAME)
+	gcc -I $(INC) -Wall -Wextra -Werror -c $(SRC)
+	ar rc $(NAME) $(SRCO)
+	ranlib $(NAME)
 
 clean:
-		rm -rf $(OBJ)
+	/bin/rm -rf $(SRCO)
 
 fclean: clean
-		rm -rf $(NAME)
+	/bin/rm -rf $(NAME)
 
 re: fclean all
-
-.PHONY: all clean fclean re

@@ -5,8 +5,8 @@
 /*                                                 +:+:+   +:    +:  +:+:+    */
 /*   By: thperchi <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2018/07/05 17:04:12 by thperchi     #+#   ##    ##    #+#       */
-/*   Updated: 2018/07/05 17:11:36 by thperchi    ###    #+. /#+    ###.fr     */
+/*   Created: 2018/10/01 16:13:30 by thperchi     #+#   ##    ##    #+#       */
+/*   Updated: 2018/10/01 16:58:22 by thperchi    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -15,17 +15,20 @@
 
 char	*ft_strdup(char *src)
 {
-	int x;
-	char *str;
+	int		x;
+	char	*y;
 
+	while (src[x])
+		x++;
+	y = (char *)malloc(sizeof(x + 1));
 	x = 0;
-	str = malloc(sizeof(*src));
-	if (str == NULL)
+	if (y == NULL)
 		return (NULL);
 	while (src[x])
 	{
-		str[x] = src[x];
+		y[x] = src[x];
 		x++;
 	}
-	return (str);
+	src[x] = '\0';
+	return (y);
 }

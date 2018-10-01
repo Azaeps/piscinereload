@@ -5,14 +5,14 @@
 /*                                                 +:+:+   +:    +:  +:+:+    */
 /*   By: thperchi <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2018/07/05 19:24:05 by thperchi     #+#   ##    ##    #+#       */
-/*   Updated: 2018/07/05 19:54:59 by thperchi    ###    #+. /#+    ###.fr     */
+/*   Created: 2018/10/01 16:13:59 by thperchi     #+#   ##    ##    #+#       */
+/*   Updated: 2018/10/01 17:00:14 by thperchi    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #ifndef FT_ABS_H
-#define FT_ABS_H
+# define FT_ABS_H
 
-#define ABS(Value) ((Value) ? (-Value) : (Value))
+# define ABS(Value) ((Value) ? (Value) : (-Value))
 #endif

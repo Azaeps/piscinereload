@@ -5,18 +5,15 @@
 /*                                                 +:+:+   +:    +:  +:+:+    */
 /*   By: thperchi <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2018/07/04 16:26:49 by thperchi     #+#   ##    ##    #+#       */
-/*   Updated: 2018/07/04 21:25:22 by thperchi    ###    #+. /#+    ###.fr     */
+/*   Created: 2018/10/01 16:13:18 by thperchi     #+#   ##    ##    #+#       */
+/*   Updated: 2018/10/01 17:50:47 by thperchi    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
+void	ft_putchar(char c);
 
 void	ft_putstr(char *str)
 {
@@ -30,9 +27,9 @@ void	ft_putstr(char *str)
 	}
 }
 
-void	ft_swap(char *a, char *b)
+void	ft_swap(char **a, char **b)
 {
-	char c;
+	char *c;
 
 	c = *a;
 	*a = *b;
@@ -62,7 +59,7 @@ int		main(int ac, char **av)
 	{
 		if (ft_strcmp(av[x], av[x + 1]) > 0)
 		{
-			ft_swap(av[x], av[x + 1]);
+			ft_swap(&av[x], &av[x + 1]);
 			x = 1;
 		}
 		else

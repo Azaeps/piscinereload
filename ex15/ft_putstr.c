@@ -5,8 +5,8 @@
 /*                                                 +:+:+   +:    +:  +:+:+    */
 /*   By: thperchi <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2018/07/03 19:25:26 by thperchi     #+#   ##    ##    #+#       */
-/*   Updated: 2018/07/05 17:00:33 by thperchi    ###    #+. /#+    ###.fr     */
+/*   Created: 2018/10/01 16:12:27 by thperchi     #+#   ##    ##    #+#       */
+/*   Updated: 2018/10/01 16:29:00 by thperchi    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -15,7 +15,7 @@ void	ft_putchar(char c);
 
 void	ft_putstr(char *str)
 {
-	char x;
+	int x;
 
 	x = 0;
 	while (str[x] != '\0')

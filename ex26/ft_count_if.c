@@ -5,24 +5,24 @@
 /*                                                 +:+:+   +:    +:  +:+:+    */
 /*   By: thperchi <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2018/07/07 04:39:08 by thperchi     #+#   ##    ##    #+#       */
-/*   Updated: 2018/07/07 04:40:44 by thperchi    ###    #+. /#+    ###.fr     */
+/*   Created: 2018/10/01 16:14:36 by thperchi     #+#   ##    ##    #+#       */
+/*   Updated: 2018/10/01 16:14:37 by thperchi    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-int		ft_count_if(char **tab, int(*f)(char*))
+int		ft_count_if(char **tab, int (*f)(char*))
 {
 	int x;
-	int res;
+	int y;
 
 	x = 0;
-	res = 0;
+	y = 0;
 	while (tab[x])
 	{
 		if (f(tab[x]) == 1)
-			res++;
+			y++;
 		x++;
 	}
-	return (res);
+	return (y);
 }
